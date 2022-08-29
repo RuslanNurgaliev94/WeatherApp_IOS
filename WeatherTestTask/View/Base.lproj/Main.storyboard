@@ -26,18 +26,27 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uae-vj-BdI">
-                                            <rect key="frame" x="20" y="11.5" width="77.5" height="20.5"/>
+                                            <rect key="frame" x="20" y="12" width="149" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="149" id="ELu-aA-lWe"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6e0-9I-2fj">
-                                            <rect key="frame" x="348" y="11" width="41" height="20.5"/>
+                                            <rect key="frame" x="335" y="11.5" width="41" height="20.5"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVZ-nL-41Y">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVZ-nL-41Y">
                                                     <rect key="frame" x="0.0" y="0.0" width="21" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="99">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="system" size="17"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="˚С" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q55-eS-4fL">
@@ -49,12 +58,15 @@
                                             </subviews>
                                         </stackView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7s-mN-p3v">
-                                            <rect key="frame" x="289" y="15" width="40.5" height="16"/>
+                                            <rect key="frame" x="139" y="13" width="188" height="17.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="188" id="9H8-ZJ-kOE"/>
+                                            </constraints>
                                             <attributedString key="attributedText">
                                                 <fragment content="Статус">
                                                     <attributes>
                                                         <font key="NSFont" metaFont="system" size="14"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
@@ -62,19 +74,15 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="uae-vj-BdI" firstAttribute="leading" secondItem="jbw-Bv-PlV" secondAttribute="leading" constant="20" symbolic="YES" id="K3R-ra-qPW"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="T7s-mN-p3v" secondAttribute="trailing" constant="20" symbolic="YES" id="hpw-5W-lht"/>
-                                        <constraint firstAttribute="bottom" secondItem="T7s-mN-p3v" secondAttribute="bottom" constant="12.5" id="l4q-nc-B5r"/>
-                                        <constraint firstAttribute="bottom" secondItem="uae-vj-BdI" secondAttribute="bottom" constant="11.5" id="tRu-fm-yqQ"/>
-                                        <constraint firstItem="T7s-mN-p3v" firstAttribute="leading" secondItem="jbw-Bv-PlV" secondAttribute="leading" constant="289" id="u21-5C-YqE"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uae-vj-BdI" secondAttribute="trailing" constant="20" symbolic="YES" id="yKQ-df-VDK"/>
+                                        <constraint firstItem="uae-vj-BdI" firstAttribute="centerY" secondItem="T7s-mN-p3v" secondAttribute="centerY" id="4UU-qv-DUG"/>
+                                        <constraint firstItem="uae-vj-BdI" firstAttribute="centerY" secondItem="jbw-Bv-PlV" secondAttribute="centerY" id="5Jw-U7-Ehc"/>
+                                        <constraint firstItem="uae-vj-BdI" firstAttribute="leading" secondItem="jbw-Bv-PlV" secondAttribute="leading" constant="20" symbolic="YES" id="D8j-lE-vAT"/>
+                                        <constraint firstItem="uae-vj-BdI" firstAttribute="centerY" secondItem="6e0-9I-2fj" secondAttribute="centerY" id="Sl6-vi-2T6"/>
+                                        <constraint firstItem="T7s-mN-p3v" firstAttribute="leading" secondItem="jbw-Bv-PlV" secondAttribute="leading" constant="139" id="UWR-dI-wKj"/>
+                                        <constraint firstItem="6e0-9I-2fj" firstAttribute="leading" secondItem="T7s-mN-p3v" secondAttribute="trailing" constant="8" symbolic="YES" id="fIe-j2-cHZ"/>
+                                        <constraint firstItem="T7s-mN-p3v" firstAttribute="top" secondItem="jbw-Bv-PlV" secondAttribute="topMargin" constant="2" id="jBa-oH-r4s"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="6e0-9I-2fj" secondAttribute="trailing" constant="25" id="58X-IL-Ahl"/>
-                                    <constraint firstAttribute="bottom" secondItem="6e0-9I-2fj" secondAttribute="bottom" constant="12" id="c8X-tw-Xew"/>
-                                    <constraint firstItem="6e0-9I-2fj" firstAttribute="leading" secondItem="fVO-WB-8ns" secondAttribute="leading" constant="348" id="ccT-rp-ENd"/>
-                                </constraints>
                                 <connections>
                                     <outlet property="conditionCityLabel" destination="T7s-mN-p3v" id="g7J-mm-YXu"/>
                                     <outlet property="nameCityLabel" destination="uae-vj-BdI" id="yDa-rO-MBI"/>
@@ -90,7 +98,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f3C-Fc-yfP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-887" y="-216"/>
+            <point key="canvasLocation" x="-888.40579710144937" y="-216.29464285714286"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="RIA-q9-T22">
@@ -138,8 +146,8 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="B3h-kZ-g2c" firstAttribute="height" secondItem="86E-Ha-3nX" secondAttribute="height" multiplier="0.603412" id="12U-ec-jH4"/>
-                                    <constraint firstItem="B3h-kZ-g2c" firstAttribute="centerX" secondItem="86E-Ha-3nX" secondAttribute="centerX" id="gd2-oF-knu"/>
+                                    <constraint firstItem="B3h-kZ-g2c" firstAttribute="top" secondItem="1YH-JM-Glu" secondAttribute="bottom" constant="30" id="Ag7-Nv-fgt"/>
+                                    <constraint firstItem="B3h-kZ-g2c" firstAttribute="leading" secondItem="86E-Ha-3nX" secondAttribute="leading" id="Ean-96-gTv"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="120" translatesAutoresizingMaskIntoConstraints="NO" id="0P4-Gh-xHS">

@@ -49,13 +49,9 @@ class ListTableVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ListCell
-
         var weather = Weather()
-        
         weather = citiesArray[indexPath.row]
-        
         cell.configure(weather: weather)
-
         return cell
     }
 }
