@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="fVO-WB-8ns">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="fVO-WB-8ns" customClass="ListCell" customModule="WeatherTestTask" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fVO-WB-8ns" id="jbw-Bv-PlV">
@@ -26,7 +26,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uae-vj-BdI">
-                                            <rect key="frame" x="20" y="11.5" width="99" height="20.5"/>
+                                            <rect key="frame" x="20" y="11.5" width="77.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -49,7 +49,7 @@
                                             </subviews>
                                         </stackView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7s-mN-p3v">
-                                            <rect key="frame" x="289" y="15" width="51" height="16"/>
+                                            <rect key="frame" x="289" y="15" width="40.5" height="16"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="Статус">
                                                     <attributes>
@@ -63,11 +63,11 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="uae-vj-BdI" firstAttribute="leading" secondItem="jbw-Bv-PlV" secondAttribute="leading" constant="20" symbolic="YES" id="K3R-ra-qPW"/>
-                                        <constraint firstAttribute="trailing" secondItem="T7s-mN-p3v" secondAttribute="trailing" constant="74" id="hpw-5W-lht"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="T7s-mN-p3v" secondAttribute="trailing" constant="20" symbolic="YES" id="hpw-5W-lht"/>
                                         <constraint firstAttribute="bottom" secondItem="T7s-mN-p3v" secondAttribute="bottom" constant="12.5" id="l4q-nc-B5r"/>
                                         <constraint firstAttribute="bottom" secondItem="uae-vj-BdI" secondAttribute="bottom" constant="11.5" id="tRu-fm-yqQ"/>
                                         <constraint firstItem="T7s-mN-p3v" firstAttribute="leading" secondItem="jbw-Bv-PlV" secondAttribute="leading" constant="289" id="u21-5C-YqE"/>
-                                        <constraint firstAttribute="trailing" secondItem="uae-vj-BdI" secondAttribute="trailing" constant="295" id="yKQ-df-VDK"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uae-vj-BdI" secondAttribute="trailing" constant="20" symbolic="YES" id="yKQ-df-VDK"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <constraints>
@@ -75,6 +75,11 @@
                                     <constraint firstAttribute="bottom" secondItem="6e0-9I-2fj" secondAttribute="bottom" constant="12" id="c8X-tw-Xew"/>
                                     <constraint firstItem="6e0-9I-2fj" firstAttribute="leading" secondItem="fVO-WB-8ns" secondAttribute="leading" constant="348" id="ccT-rp-ENd"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="conditionCityLabel" destination="T7s-mN-p3v" id="g7J-mm-YXu"/>
+                                    <outlet property="nameCityLabel" destination="uae-vj-BdI" id="yDa-rO-MBI"/>
+                                    <outlet property="tempCityLabel" destination="mVZ-nL-41Y" id="Acc-aI-bMw"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

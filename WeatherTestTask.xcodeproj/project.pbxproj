@@ -17,6 +17,8 @@
 		3E629F5328BCCB98000FBAF9 /* NetworkWeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E629F5228BCCB98000FBAF9 /* NetworkWeatherManager.swift */; };
 		3E629F5528BCCF30000FBAF9 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E629F5428BCCF30000FBAF9 /* WeatherData.swift */; };
 		3E629F5728BCD692000FBAF9 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E629F5628BCD692000FBAF9 /* Weather.swift */; };
+		3E629F5928BCEAB2000FBAF9 /* GetCitesWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E629F5828BCEAB2000FBAF9 /* GetCitesWeather.swift */; };
+		3E629F5B28BD0C4C000FBAF9 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E629F5A28BD0C4C000FBAF9 /* ListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		3E629F5228BCCB98000FBAF9 /* NetworkWeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWeatherManager.swift; sourceTree = "<group>"; };
 		3E629F5428BCCF30000FBAF9 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		3E629F5628BCD692000FBAF9 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		3E629F5828BCEAB2000FBAF9 /* GetCitesWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCitesWeather.swift; sourceTree = "<group>"; };
+		3E629F5A28BD0C4C000FBAF9 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 				3E629F5228BCCB98000FBAF9 /* NetworkWeatherManager.swift */,
 				3E629F5428BCCF30000FBAF9 /* WeatherData.swift */,
 				3E629F5628BCD692000FBAF9 /* Weather.swift */,
+				3E629F5828BCEAB2000FBAF9 /* GetCitesWeather.swift */,
+				3E629F5A28BD0C4C000FBAF9 /* ListCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,11 +180,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E629F5928BCEAB2000FBAF9 /* GetCitesWeather.swift in Sources */,
 				3E629F3728BCAD86000FBAF9 /* AppDelegate.swift in Sources */,
 				3E629F3928BCAD86000FBAF9 /* SceneDelegate.swift in Sources */,
 				3E629F5328BCCB98000FBAF9 /* NetworkWeatherManager.swift in Sources */,
 				3E629F4B28BCB2B1000FBAF9 /* ListTableVC.swift in Sources */,
 				3E629F5528BCCF30000FBAF9 /* WeatherData.swift in Sources */,
+				3E629F5B28BD0C4C000FBAF9 /* ListCell.swift in Sources */,
 				3E629F5128BCCABB000FBAF9 /* Constant.swift in Sources */,
 				3E629F5728BCD692000FBAF9 /* Weather.swift in Sources */,
 			);
