@@ -10,15 +10,15 @@ import Foundation
 
 struct Weather {
     var name: String = "Идет загрузка"
-    var temperature: Int = 0
+    var temperature: Double = 0.0
     var temperatureString: String {
-        return String(temperature)
+        return String(format: "%.0f", temperature)
     }
     var conditionCode: String = "" //для отображение изображения
     var url: String = ""
     var condition: String = ""
     var presureMm: Int = 0
-    var windSpeed: Int = 0
+    var windSpeed: Double = 0.0
     var tempMin: Int = 0
     var tempMax: Int = 0
     

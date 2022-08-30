@@ -25,7 +25,7 @@ class DetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        refreshLabels()
 
     }
 
@@ -33,7 +33,7 @@ class DetailVC: UIViewController {
         
         nameCityLabel.text = weatherModel?.name
         
-        let url = URL(string: "https://yastatic.net/weather/i/icons/funky/dark/\(weatherModel?.conditionCode).svg")
+        let url = URL(string: "https://yastatic.net/weather/i/icons/funky/dark/\(weatherModel!.conditionCode).svg")
         
         let weatherImage = UIView(SVGURL: url!) {(image) in
             image.resizeToFit(self.viewCity.bounds)
@@ -43,7 +43,7 @@ class DetailVC: UIViewController {
         self.viewCity.addSubview(weatherImage)
         
         conditionLabel.text = weatherModel?.conditionString
-        tempCity.text = "\((weatherModel?.temperature)!)"
+        tempCity.text = weatherModel?.temperatureString
         pressureLabel.text = "\((weatherModel?.presureMm)!)"
         windSpeedLabel.text = "\((weatherModel?.windSpeed)!)"
         minTempLabel.text = "\((weatherModel?.tempMin)!)"
