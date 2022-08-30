@@ -86,7 +86,6 @@ class ListTableVC: UITableViewController {
             weather = citiesArray[indexPath.row]
         }
         
-        weather = citiesArray[indexPath.row]
         cell.configure(weather: weather)
         return cell
     }
